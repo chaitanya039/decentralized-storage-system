@@ -101,4 +101,10 @@ coverage/
 *.7z
 
 # IPFS Cluster Runtime Data
-ipfs-cluster/
+ipfs-cluster/data/
+ipfs-cluster/raft/
+ipfs-cluster/volumes/
+ipfs-cluster/peerstore/
+ipfs-cluster/keystore/
+ipfs-cluster/*.log
+ipfs-cluster/*.pid
