@@ -103,6 +103,7 @@ coverage/
 # IPFS Cluster Runtime Data
 ipfs-cluster/data/
 ipfs-cluster/raft/
+ipfs-cluster/volumes/
 ipfs-cluster/peerstore/
 ipfs-cluster/keystore/
 ipfs-cluster/*.log
