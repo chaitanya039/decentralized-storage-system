@@ -21,6 +21,18 @@ const File = sequelize.define(
             onDelete: "CASCADE",
             onUpdate: "CASCADE"
         },
+        filename: {
+            type: DataTypes.STRING,
+            allowNull: false
+        },
+        mimeType: {
+            type: DataTypes.STRING,
+            field: "mime_type"
+        },
+        size: {
+            type: DataTypes.BIGINT,
+            allowNull: false
+        },
         cid: {
             type: DataTypes.STRING,
             unique: true,
@@ -28,11 +40,13 @@ const File = sequelize.define(
         },
         visibility: {
             type: DataTypes.ENUM("private", "shared", "public"),
-            defaultValue: "private"
+            defaultValue: "private",
+            allowNull: false
         },
         status: {
             type: DataTypes.ENUM("active", "deleted", "archived"),
-            defaultValue: "active"
+            defaultValue: "active",
+            allowNull: false
         }
     }, 
     {
