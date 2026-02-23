@@ -1,5 +1,5 @@
 import { DataTypes } from "sequelize";
-import sequelize from "../config/db";
+import sequelize from "../config/db.js";
 
 // Create database schema for User
 const User = sequelize.define(
@@ -43,7 +43,6 @@ const User = sequelize.define(
       defaultValue: 1073741824, // 1GB
       field: "storage_quota",
     },
-
     usedStorage: {
       type: DataTypes.BIGINT,
       defaultValue: 0,
