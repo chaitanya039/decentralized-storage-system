@@ -13,8 +13,8 @@ const sequelize = new Sequelize(
     
     pool: {
       max: 10,
-      min: 10,
-      aquire: 30000,
+      min: 0,
+      acquire: 30000,
       idle: 10000
     },
   }
